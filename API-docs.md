@@ -11,7 +11,7 @@ A basic call
 ------------
 
 We use curl for examples, so you can try them for yourself. Here we call resource "project" with method "select-all". 
-We get the JSON with data back, which is default format. API token is passed an HTTP BASIC AUTH user parameter.
+We get the JSON with data back, which is default format. API token is passed as HTTP BASIC AUTH user parameter.
 
 ```bash
 $ curl -v -k \
