@@ -97,10 +97,23 @@ $ curl -v -k \
 Let's recap
 -----------
 
-* all calls must be HTTP POST
-* pass API token as HTTP BASIC AUTH username (when out of alpha workonomic.cc will run over HTTPS!)
-* define resource and method with _r and _m
-* optionally define output format with _f
-* use _x for explore mode (returns information about the current level)
-* form-urlencode arguments and send them as POST data
-* you can stack multiple method calls inside one HTTP call and the result of the last will get returned
+ * all calls must be HTTP POST
+ * pass API token as HTTP BASIC AUTH username (when out of alpha workonomic.cc will run over HTTPS!)
+ * define resource and method with _r and _m
+ * optionally define output format with _f
+ * use _x for explore mode (returns information about the current level)
+ * form-urlencode arguments and send them as POST data
+ * you can stack multiple method calls inside one HTTP call and the result of the last will get returned
+
+
+Error statuses
+--------------
+
+
+ * 400 - no resource given
+ * 400 - no method given
+ * 401 - wrong api token
+ * 403 - validation error (returned data shows the error, for example: ["validation",{"id":"required"}] )
+ * 404 - resource or method not found
+ * 500 - internal server error
+
