@@ -12,4 +12,4 @@ Workonomic is a personal time tracker for freelancers and other profesionalls th
 General API documentation
 -------------------------
 
-[Read about it here](https://github.com/InvoiceFox/Workonomic-API-bash/edit/master/API-docs.md)
+[Read about it here](https://github.com/InvoiceFox/Workonomic-API-bash/blob/master/API-docs.md)
