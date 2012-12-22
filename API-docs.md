@@ -1,6 +1,8 @@
 General API guidelines
 ======================
 
+State: first version, this document will improve.
+
 A basic call
 ------------
 
