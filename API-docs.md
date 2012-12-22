@@ -18,10 +18,11 @@ $ curl -v -k \
 	"id_client":17,"special":0,"qtymu":null,"qlylabels":null,"deftime":30,"color":"","billable":0},]]
 ```
 
-Ouptut formats and arguments
-----------------------------
+Passing arguments
+-----------------
 
-By default API return JSON as in previous example. But we can define a format, in this case csv (comma separated values).
+You can also notice we defined a method argument here (id=18). We must send arguments over as regular x-www-form-urlencoded 
+POST values. All API requests must be POST calls.
 
 ```bash
 $ curl -v -k \
@@ -33,18 +34,18 @@ $ curl -v -k \
 	14;abel;Abelie.biz;16;0;;;30;;1
 ```
 
-You can also notice we defined a method argument here (id=18). We must send arguments over as regular x-www-form-urlencoded 
-POST values. All API requests must be POST calls.
-
 
 Output formats
 --------------
 
-* json - JSON
-* csv - comma separated values
-* rmap - rebol map
-* tsv - tab separated values (todo)
-* xml - XML (todo)
+By default API returns JSON as in first example, but you can look at the second example where we defined csv output. 
+But we can define a format, in this case csv (comma separated values).
+
+ * json - JSON
+ * csv - comma separated values
+ * rmap - rebol map
+ * tsv - tab separated values (todo)
+ * xml - XML (todo)
 
 
 Stacking methods
