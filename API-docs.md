@@ -1,5 +1,5 @@
-General API documentation
-=========================
+General API guidelines
+======================
 
 A basic call
 ------------
