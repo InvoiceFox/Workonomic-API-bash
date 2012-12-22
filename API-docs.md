@@ -103,4 +103,4 @@ Let's recap
 * optionally define output format with _f
 * use _x for explore mode (returns information about the current level)
 * form-urlencode arguments and send them as POST data
-
+* you can stack multiple method calls inside one HTTP call and the result of the last will get returned
