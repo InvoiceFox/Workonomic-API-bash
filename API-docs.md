@@ -7,6 +7,7 @@ A basic call
 We use curl for examples, so you can try them for yourself. Here we call resource "project" with method "select-all". 
 We get the JSON with data back. API token is passed an an HTTP BASIC AUTH user parameter.
 
+```bash
 	$ curl -v -k \
 	  -u pdabm35106fnc7kzy7uatv9rdasdsadasdasde:x \
 	  -d "" \
@@ -15,7 +16,7 @@ We get the JSON with data back. API token is passed an an HTTP BASIC AUTH user p
 	>> [[{"id":14,"shortname":"abel","name":"Abelie.biz","id_client":16,"special":0,"qtymu":null,
 		"qlylabels":null,"deftime":30,"color":"","billable":1},{"id":15,"shortname":"mgam","name":"Usrjoy",
 		"id_client":17,"special":0,"qtymu":null,"qlylabels":null,"deftime":30,"color":"","billable":0},]]
-
+```
 
 Different ouptut format and argument
 ------------------------------------
