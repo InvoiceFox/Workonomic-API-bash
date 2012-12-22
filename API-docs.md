@@ -4,7 +4,7 @@ General API guidelines
 _State: first version, this document will improve._
 
 For concrete list and description of resources and methods visit the
-[Workonomic API explorer](http//workonomic.cc/api-explorer.html).
+[Workonomic API explorer](http://workonomic.cc/api-explorer.html).
 You will need and API token for that.
 
 A basic call
