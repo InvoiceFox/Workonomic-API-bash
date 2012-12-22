@@ -70,4 +70,37 @@ $ curl -v -k \
 	15;bobo;Bobo.cc;13;0;;;30;;1
 ```
 
+Explore mode
+------------
+
+You enter explore mode by setting the _x flag. 
+
+Explore mode can be invoked:
+
+ * withouth resource or method defined: in this case it retuns the list of resoures
+ * with just resource defined: returns the list and descriptions of methods
+ * with resource and method: retuns the list of arguments
+
+```bash
+$ curl -v -k \
+  -u pdabm35106fnc7kzy7uatv9rd5rga32jchet208e:x \
+  -d "" \
+  "http://workonomic.cc/API?_r=project&_x=1"
+
+>> [[{"name":"insert-into","description":"Inserts item into the table and returns the last id."},
+	{"name":"insert-select","description":"Insert item into the table and returns the unit as stored in the table."},
+	{"name":"update","description":"Updates item with given ID with given values."},
+	...]] 
+```
+
+
+Let's recap
+-----------
+
+* all calls must be HTTP POST
+* pass API token as HTTP BASIC AUTH username (when out of alpha workonomic.cc will run over HTTPS!)
+* define resource and method with _r and _m
+* optionally define output format with _f
+* use _x for explore mode (returns information about the current level)
+* form-urlencode arguments and send them as POST data
 
